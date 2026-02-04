@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Briefcase, Plus, Edit, Trash2, Eye, MapPin, Calendar, Users } from 'lucide-react';
 import Swal from 'sweetalert2';
+import AdminLayout from '../layouts/AdminLayout';
 
 const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 
@@ -191,7 +192,8 @@ const AdminJobs = () => {
 	};
 
 	return (
-		<div className="p-8">
+		<AdminLayout>
+			<div className="p-8">
 			<div className="flex justify-between items-center mb-8">
 				<div>
 					<h1 className="text-3xl font-bold text-gray-800">Career Management</h1>
@@ -626,6 +628,7 @@ const AdminJobs = () => {
 				</div>
 			)}
 		</div>
+	</AdminLayout>
 	);
 };
 
