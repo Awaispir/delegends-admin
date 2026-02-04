@@ -1179,7 +1179,6 @@ Role: ${userRole.toUpperCase()}`);
 											<div className="flex-1">
 												<div className="flex items-center justify-between mb-2">
 													<span className="text-sm font-medium text-gray-900">Calendar viewing rights</span>
-													<button className="text-xs text-blue-600 hover:underline">View and change</button>
 												</div>
 												<div className="flex flex-wrap gap-2 text-xs">
 													<span className="inline-flex items-center gap-1 text-gray-600">
