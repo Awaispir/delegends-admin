@@ -1415,8 +1415,8 @@ const AdminCalendar = () => {
 									</div>
 								</div>
 							</div>
-
-							/* Action Buttons */
+							
+							{/* Action Buttons */}
 							<div className="space-y-3">
 								{/* Charge Payment Button - Show only if unpaid */}
 								{!selectedBooking.isPaid && selectedBooking.cardSetupComplete && (
