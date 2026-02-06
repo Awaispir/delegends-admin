@@ -848,7 +848,13 @@ const AdminCalendar = () => {
 								</button>
 								<div className="bg-white px-4 py-2 rounded-lg border border-gray-300">
 									<span className="font-medium text-sm">
-										Mon, Today
+										{selectedDate.toLocaleDateString('en-US', { 
+											weekday: 'short',
+											month: 'short',
+											day: 'numeric',
+											year: 'numeric'
+										})}
+										{selectedDate.toDateString() === new Date().toDateString() && ', Today'}
 									</span>
 								</div>
 								<button onClick={nextDay} className="p-1.5 hover:bg-gray-200 rounded border border-gray-300">
