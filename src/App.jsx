@@ -23,7 +23,9 @@ function App() {
 			<AuthProvider>
 				<Routes>
 					<Route path="/auth/login" element={<Login />} />
+					<Route path="/login" element={<Login />} />
 					<Route path="/auth/register" element={<Register />} />
+					<Route path="/register" element={<Register />} />
 
 					<Route
 						path="/admin/calendar"
